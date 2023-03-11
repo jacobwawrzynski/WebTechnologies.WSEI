@@ -1,13 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;500;700&display=swap');
 
+/* ############### CONTENT ###############
+    # General settings 
+    # Header
+
+*/
+
+/* ############### General settings ###############*/
 :root {
     --main-bg-clr: #001241;
     --blue-text-clr: #00cfcf;
     --red-text-clr: #ff595a;
     --white-text-clr: white;
+    --thin-text: 300;
+    --medium-text: 500;
+    --bold-text: 700;
 }
 
-* {
+* ,::after, ::before{
+    box-sizing: border-box;
+}
+
+body {
     background-color: var(--main-bg-clr);
     font-family: 'Rajdhani', sans-serif;;
+}
+
+/* ############### Header ###############*/
+header {
+    transition: all 0.5s;
+    z-index: 997;
+    height: 90px;
+    align-items: center;
+    display: flex;
+    color: var(--blue-text-clr);
+}
+
+.logo {
+    
 }
