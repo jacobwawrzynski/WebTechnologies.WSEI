@@ -19,11 +19,13 @@
 
 * ,::after, ::before{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     background-color: var(--main-bg-clr);
-    font-family: 'Rajdhani', sans-serif;;
+    font-family: 'Rajdhani', sans-serif;
 }
 
 /* ############### Header ###############*/
@@ -40,11 +42,17 @@ header {
     align-items: center;
     justify-content: space-between;
     display: flex;
+    text-decoration: none;
+}
+
+.logo a {
+  text-decoration: none;
+  font-size: 20px;
 }
 
 @media (min-width: 1200px) {
     .logo {
-        max-width: 1140px;
+        width: 100%;
     }
 }
 
@@ -63,11 +71,7 @@ h1 span {
   
     
     nav ul {
-      margin: 0;
-      padding: 0;
-      display: flex;
       list-style: none;
-      align-items: center;
     }
   
     
@@ -78,32 +82,10 @@ h1 span {
     
     nav>ul>li {
       white-space: nowrap;
+      display: inline;
       padding: 10px 0 10px 28px;
+      float: right;
     }
-  
-    /*
-    nav a {
-      display: inline-block;
-      position: relative;
-      color: var(--blue-text-clr);
-    }
-
-    nav a::after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      transform: scaleX(0);
-      height: 2px;
-      bottom: 0;
-      left: 0;
-      transform-origin: bottom right;
-      transition: transform 0.25s ease-out;
-    }
-
-    nav a:hover::after {
-      transform: scaleX(1);
-      transform-origin: bottom left;
-    } */
 
     .underline-animation {
       display: inline-block;
@@ -130,16 +112,4 @@ h1 span {
       transform: scaleX(1);
       transform-origin: bottom left;
     }
-  
-    /* nav a:hover,
-    nav .active,
-    nav .active:focus,
-    nav li:hover>a {
-      color: var(--white-text-clr);
-    }
-  
-    .mobile-nav-show,
-    .mobile-nav-hide {
-      display: none;
-    } */
 }
