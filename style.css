@@ -3,12 +3,13 @@
 /* ############### CONTENT ###############
     # General settings 
     # Header
-
+    # Main content
+    # Media queries
 */
 
 /* ############### General settings ###############*/
 :root {
-    --main-bg-clr: #001241;
+    --main-bg-clr: #000c2c;
     --blue-text-clr: #00cfcf;
     --red-text-clr: #ff595a;
     --white-text-clr: white;
@@ -43,17 +44,13 @@ header {
     justify-content: space-between;
     display: flex;
     text-decoration: none;
+    padding-left: 55px;
+    padding-right: 55px;
 }
 
 .logo a {
   text-decoration: none;
   font-size: 20px;
-}
-
-@media (min-width: 1200px) {
-    .logo {
-        width: 100%;
-    }
 }
 
 h1 {
@@ -64,52 +61,156 @@ h1 span {
     color: var(--red-text-clr);
 }
 
-@media (min-width: 1280px) {
-    nav {
-      padding: 0;
-    }
-  
-    
-    nav ul {
-      list-style: none;
-    }
-  
-    
-    nav li {
-      position: relative;
-    }
-  
-    
-    nav>ul>li {
-      white-space: nowrap;
-      display: inline;
-      padding: 10px 0 10px 28px;
-      float: right;
-    }
+/* ############### Main content ###############*/
+#hero {
+  background-color: var(--main-bg-clr);
+  width: 100%;
+}
 
-    .underline-animation {
-      display: inline-block;
-      position: relative;
-      color: var(--blue-text-clr);
-      text-decoration: none;
-      font-size: 25px;
-    }
-    
-    .underline-animation::after {
-      content: '';
-      position: absolute;
+#hero h1 {
+  margin: 0 0 15px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #d2e0ed;
+  font-family: "Poppins", sans-serif;
+}
+
+#hero h2 {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 22px;
+}
+
+#hero .btn-get-started {
+  color: #213b52;
+  border-radius: 50px;
+  padding: 8px 35px 10px 35px;
+  border: 2px solid #fdc134;
+  transition: all ease-in-out 0.3s;
+  display: inline-block;
+  background: #fdc134;
+}
+
+#hero .btn-get-started:hover {
+  background: transparent;
+  color: #fff;
+}
+
+#hero .container .main-content {
+  display: flex;
+  align-items: center;
+}
+
+/* ############### Media queries ###############*/
+@media (min-width: 1200px) {
+  .logo {
       width: 100%;
-      transform: scaleX(0);
-      height: 2px;
-      bottom: 0;
-      left: 0;
-      background-color: var(--blue-text-clr);
-      transform-origin: bottom right;
-      transition: transform 0.25s ease-out;
-    }
-    
-    .underline-animation:hover::after {
-      transform: scaleX(1);
-      transform-origin: bottom left;
-    }
+  }
+}
+
+@media (min-width: 1280px) {
+  nav {
+    padding: 0;
+  }
+
+  
+  nav ul {
+    list-style: none;
+  }
+
+  
+  nav li {
+    position: relative;
+  }
+
+  
+  nav>ul>li {
+    white-space: nowrap;
+    display: inline;
+    padding: 10px 0 10px 28px;
+    float: right;
+  }
+
+  .underline-animation {
+    display: inline-block;
+    position: relative;
+    color: var(--blue-text-clr);
+    text-decoration: none;
+    font-size: 25px;
+  }
+  
+  .underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--blue-text-clr);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
+
+@media (max-width: 991px) {
+  #hero .hero-img {
+    text-align: center;
+  }
+
+  #hero .hero-img img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero {
+    -moz-text-align-last: center;
+    text-align-last: center;
+  }
+
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  #hero .hero-img img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 575px) {
+  #hero .hero-img img {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
 }
