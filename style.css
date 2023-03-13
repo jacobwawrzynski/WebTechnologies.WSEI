@@ -56,7 +56,7 @@ body {
 }
 */
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
     color: var(--white-text-clr);
 }   
 
@@ -85,7 +85,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.5rem;
+  padding: 2rem 5rem;
 }
 
 nav li {
@@ -120,7 +120,7 @@ nav>ul>li {
 }
 
 .nav-item {
-  margin-left: 5rem;
+  margin-left: 3rem;
 }
 
 .nav-link{
@@ -170,10 +170,12 @@ nav>ul>li {
       border-radius: 10px;
       text-align: center;
       transition: 0.3s;
+      z-index: 997;
   }
 
   .nav-logo {
     font-size: 1.5rem;
+    white-space: nowrap;
   }
 
   .nav-menu.active {
@@ -205,12 +207,12 @@ nav>ul>li {
 }
 
 /* ############### Main content ###############*/
-#hero {
+#main {
   background-color: var(--main-bg-clr);
   width: 100%;
 }
 
-#hero h1 {
+#main h1 {
   margin: 0 0 15px 0;
   font-size: 48px;
   font-weight: 700;
@@ -218,13 +220,13 @@ nav>ul>li {
   color: #d2e0ed;
 }
 
-#hero h2 {
+#main h2 {
   color: #fff;
   margin-bottom: 30px;
   font-size: 22px;
 }
 
-#hero .btn-get-started {
+#main .btn-get-started {
   color: #213b52;
   border-radius: 50px;
   padding: 8px 35px 10px 35px;
@@ -234,20 +236,27 @@ nav>ul>li {
   background: #fdc134;
 }
 
-#hero .btn-get-started:hover {
+#main .btn-get-started:hover {
   background: transparent;
   color: #fff;
 }
 
-#hero .container .main-content {
+#main .container .main-content {
   display: flex;
   align-items: center;
 }
 
+.mitochondrium-img {
+  width: 500px;
+  height: 300px;
+  transform: rotate(-30deg);
+}
+
 /* ############### Media queries ###############*/
-@media (min-width: 1200px) {
-  .logo {
-      width: 100%;
+@media (max-width: 768px) {
+  .mitochondrium-img {
+    width: 250px;
+    height: 150px;
   }
 }
 
@@ -302,42 +311,34 @@ nav>ul>li {
 } */
 
 @media (max-width: 991px) {
-  #hero .hero-img {
+  #main .mitochondrium-img {
     text-align: center;
   }
 
-  #hero .hero-img img {
+  #main .mitochondrium-img img {
     width: 50%;
   }
 }
 
 @media (max-width: 768px) {
-  #hero {
+  #main {
     -moz-text-align-last: center;
     text-align-last: center;
   }
 
-  #hero h1 {
+  #main h1 {
     font-size: 28px;
     line-height: 36px;
   }
 
-  #hero h2 {
+  #main h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
   }
 
-  #hero .hero-img img {
-    width: 70%;
-  }
 }
 
-@media (max-width: 575px) {
-  #hero .hero-img img {
-    width: 80%;
-  }
-}
 
 @media (min-width: 1400px) {
   .container {
