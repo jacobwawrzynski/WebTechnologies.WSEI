@@ -13,7 +13,6 @@
     --header-bg-clr: #000c2c;
     --hamburger-bg-clr: #00185c;
     --blue-text-clr: #00cfcf;
-    -asd: #0061cf;
     --red-text-clr: #ff595a;
     --white-text-clr: white;
     --thin-text: 300;
@@ -191,18 +190,18 @@ nav>ul>li {
 }
 
 /* ############### Main content ###############*/
-#main-section {
+#header-section {
   background-color: var(--header-bg-clr);
   width: 100%;
 }
 
-#main-section h2 {
+#header-section h2 {
   color: var(--white-text-clr);
   margin-bottom: 30px;
   font-size: 3rem;
 }
 
-#main-section .btn-get-started {
+#header-section .btn-get-started {
   color: var(--red-text-clr);
   border-radius: 50px;
   padding: 8px 35px 10px 35px;
@@ -210,39 +209,46 @@ nav>ul>li {
   transition: all ease-in-out 0.3s;
   display: inline-block;
   background: var(--header-bg-clr);
+  margin-top: 30px;
 }
 
-#main-section .btn-get-started:hover {
+#header-section .btn-get-started:hover {
   background-color: var(--red-text-clr); 
   color: var(--header-bg-clr);
   border: 2px solid transparent;
 }
 
-#main-section .container .main-section-content {
-  display: flex;
-  align-items: center;
-  margin-left: -10%;
-  margin-right: auto;
-}
-
-#main-section .container .main-section-content .main-section-content-text {
-  min-width: 400px;
-}
-
-.mitochondrium-img {
-  width: 500px;
-  height: 300px;
-  transform: rotate(-30deg);
-}
-
-.container {
+#header-section .container {
   margin-top: 5rem;
   margin-left: auto;
   margin-right: auto;
+  width: 70%;
 }
 
+#header-section .container .header-section-content {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  width: 100%;
+}
+
+#header-section .container .header-section-content .header-section-content-text {
+  min-width: 600px;
+}
+
+.mitochondrium {
+  width: 100%;
+}
+
+.mitochondrium img {
+  width: 500px;
+  height: 300px;
+}
+
+
+
 /* ############### Media queries ###############*/
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .mitochondrium-img {
     width: 250px;
     height: 150px;
@@ -250,27 +256,27 @@ nav>ul>li {
 }
 
 @media (max-width: 991px) {
-  #main-section .mitochondrium-img {
+  #header-section .mitochondrium-img {
     text-align: center;
   }
 
-  #main-section .mitochondrium-img img {
+  #header-section .mitochondrium-img img {
     width: 50%;
   }
-}
+} */
 
 @media (max-width: 768px) {
-  #main-section {
+  #header-section {
     -moz-text-align-last: center;
     text-align-last: center;
   }
 
-  #main-section h1 {
+  #header-section h1 {
     font-size: 28px;
     line-height: 36px;
   }
 
-  #main-section h2 {
+  #header-section h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
@@ -279,7 +285,7 @@ nav>ul>li {
 }
 
 
-@media (min-width: 1400px) {
+/* @media (min-width: 1400px) {
   .container {
     max-width: 1320px;
   }
@@ -294,5 +300,4 @@ nav>ul>li {
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
-  }
-}
+  } */
