@@ -14,7 +14,9 @@
     --header-bg-clr: #000c2c;
     --hamburger-bg-clr: #001242;
     --blue-text-clr: #00cfcf;
+    --darkblue-text-clr: #001f70;
     --red-text-clr: #ff595a;
+    --darkred-text-clr: #d31f1f;
     --white-text-clr: white;
     --thin-text: 300;
     --medium-text: 500;
@@ -219,8 +221,8 @@ nav>ul>li {
 
 .card-container {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	grid-gap: 70px;
 	padding: 20px;
 }
 
@@ -229,15 +231,17 @@ nav>ul>li {
 	text-align: center;
 }
 
-.title h1 {
+.title h4 {
 	font-size: 36px;
 	margin-bottom: 10px;
+  color: var(--darkred-text-clr);
 }
 
 .title p {
 	font-size: 18px;
-	color: #666;
+	color: var(--darkblue-text-clr);
 	margin-bottom: 0;
+  font-weight: var(--bold-text);
 }
 
 .card {
@@ -306,6 +310,12 @@ nav>ul>li {
     height: 150px;
   }
 
+}
+
+@media (max-width: 474px) {
+  .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
 }
 
 @media (max-width: 1110px) {
