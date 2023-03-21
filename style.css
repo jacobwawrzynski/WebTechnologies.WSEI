@@ -30,6 +30,10 @@
     overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     background-color: white;
     font-family: 'Rajdhani', sans-serif;
@@ -212,6 +216,13 @@ nav>ul>li {
   height: 300px;
 }
 
+/* ############### About section ###############*/
+#about .title p {
+  font-weight: var(--medium-text);
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 /* ############### Services section ###############*/
 #services {
   max-width: 1300px;
@@ -232,20 +243,29 @@ nav>ul>li {
 }
 
 .title h4 {
-	font-size: 36px;
+	font-size: 45px;
 	margin-bottom: 10px;
   color: var(--darkred-text-clr);
 }
 
 .title p {
-	font-size: 18px;
+	font-size: 25px;
 	color: var(--darkblue-text-clr);
 	margin-bottom: 0;
   font-weight: var(--bold-text);
 }
 
+.card h5 {
+  font-size: 20px;
+  color: white;
+}
+
+.card p {
+  color: white;
+}
+
 .card {
-	background-color: #f2f2f2;
+	background-color: var(--header-bg-clr);
 	padding: 20px;
 	border-radius: 10px;
 	box-shadow: 0px 0px 10px #888888;
