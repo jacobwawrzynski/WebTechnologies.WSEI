@@ -1,10 +1,7 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const navLink = document.querySelectorAll(".nav-link");
-const popupBtn = document.querySelector(".popup-button");
-const wrapper = document.querySelector(".wrapper");
-const popupBox = document.querySelector(".popup-box");
-const popupClose = document.querySelector(".popup-close");
+const popup = document.querySelector("#popup");
 
 
 // Toggle between active and inactive hamburger menu
@@ -19,4 +16,13 @@ function mobileMenu() {
 function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
+}
+
+// Newsletter
+function popupVisible() {
+    popup.classList.add("active");
+}
+
+function popupHidden() {
+    popup.classList.remove("active");
 }

@@ -189,6 +189,7 @@ nav>ul>li {
   background-color: var(--red-text-clr); 
   color: var(--header-bg-clr);
   border: 2px solid transparent;
+  cursor: pointer;
 }
 
 #header-section .container {
@@ -219,7 +220,7 @@ nav>ul>li {
 /* ############### Newsletter ###############*/
 #popup {
   position: fixed;
-  top: 50%;
+  top: -100%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1000;
@@ -229,6 +230,11 @@ nav>ul>li {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
   transition: 0.5s;
   visibility: hidden;
+}
+
+#popup.active {
+  visibility: visible;
+  top: 50%;
 }
 
 #popup .content {
