@@ -216,6 +216,75 @@ nav>ul>li {
   height: 300px;
 }
 
+/* ############### Newsletter ###############*/
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background-color: var(--hamburger-bg-clr);
+  width: 450px;
+  padding: 80px 50px 50px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.8);
+  transition: 0.5s;
+  visibility: hidden;
+}
+
+#popup .content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#popup .content img {
+  max-width: 80px;
+}
+
+#popup .content h2 {
+  font-size: 24px;
+  font-weight: var(--bold-text);
+  color: white;
+  margin: 20px 0 10px;
+}
+
+#popup .content p {
+  text-align: center;
+  font-size: 16px;
+  color: white;
+}
+
+#popup .content .input-box {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#popup .content .input-box input {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  outline: none;
+  font-size: 18px;
+}
+
+#popup .content .input-box input[type="submit"] {
+  max-width: 150px;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+
 /* ############### About section ###############*/
 #about .title p {
   font-weight: var(--medium-text);
