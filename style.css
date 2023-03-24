@@ -218,7 +218,7 @@ nav>ul>li {
 }
 
 /* ############### Newsletter ###############*/
-#popup {
+.popupNewsletter {
   position: fixed;
   top: -100%;
   left: 50%;
@@ -232,12 +232,12 @@ nav>ul>li {
   visibility: hidden;
 }
 
-#popup.active {
+.popupNewsletter.active {
   visibility: visible;
   top: 50%;
 }
 
-#popup .content {
+.popupNewsletter .content {
   position: relative;
   width: 100%;
   display: flex;
@@ -246,24 +246,24 @@ nav>ul>li {
   flex-direction: column;
 }
 
-#popup .content img {
+.popupNewsletter .content img {
   max-width: 80px;
 }
 
-#popup .content h2 {
-  font-size: 24px;
+.popupNewsletter .content h2 {
+  font-size: 24px !important;
   font-weight: var(--bold-text);
-  color: white;
+  color: white !important;
   margin: 20px 0 10px;
 }
 
-#popup .content p {
+.popupNewsletter .content p {
   text-align: center;
   font-size: 16px;
   color: white;
 }
 
-#popup .content .input-box {
+.popupNewsletter .content .input-box {
   position: relative;
   width: 100%;
   margin-top: 20px;
@@ -272,7 +272,7 @@ nav>ul>li {
   align-items: center;
 }
 
-#popup .content .input-box input {
+.popupNewsletter .content .input-box input {
   width: 100%;
   border: 2px solid;
   padding: 15px;
@@ -280,11 +280,12 @@ nav>ul>li {
   font-size: 18px;
 }
 
-#popup .content .input-box span {
+.popupNewsletter .content .input-box span {
   color: var(--red-text-clr);
 }
 
-#popup .content .input-box input[type="submit"] {
+.popupNewsletter .content .input-box input[type="submit"],
+.popupNewsletter .content .input-box input[type="button"] {
   max-width: 150px;
 }
 

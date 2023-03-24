@@ -48,10 +48,10 @@
           <div class="header-section-content-text">
             <h2>Your individual health center</h2>
             <h3>Take full control over your body with <span>The Superman Cell</span> and change your life</h3>
-            <a class="btn-get-started" onclick="popupVisible();">Get Started</a>
+            <a class="btn-get-started" onclick="popupNewsletterVisible();">Get Started</a>
 
             <!-- Popup newsletter -->
-            <div id="popup">
+            <div class="popupNewsletter">
               <div class="content">
                 <img src="images/mitochondrium.png" alt="mitochondrium">
                 <h2>Join our Newsletter!</h2>
@@ -74,11 +74,32 @@
               </div>
 
               <!-- Close button -->
-              <a class="close" onclick="popupHidden();">
+              <a class="close" onclick="popupNewsletterHidden();">
                 <img src="images/close.png" height="20" width="20" alt="close">
               </a>
 
             </div>
+
+            <!-- Success popup -->
+            <div class="popupNewsletter" id="newsletterSuccess">
+              <div class="content">
+                <img src="images/mitochondrium.png" alt="mitochondrium">
+                <h2>Success!</h2>
+                <p>
+                  You will receive e-mails with tips and news!
+                </p>
+                <div class="input-box">
+                  <input class="btn-get-started" type="button" value="Done" onclick="popupSuccessHide();">
+                </div>
+              </div>
+
+              <!-- Close button -->
+              <a class="close" onclick="popupSuccessHide();">
+                <img src="images/close.png" height="20" width="20" alt="close">
+              </a>
+
+            </div>
+
           </div>
           <div class="mitochondrium">
             <img src="images/mitochondrium.png" alt="Mitochondrium">
