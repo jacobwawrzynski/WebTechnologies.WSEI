@@ -5,6 +5,8 @@
     # Header
     # Hamburger menu
     # Header section
+    # Newsletter
+    # About section
     # Services section
     # Media queries
 */
@@ -480,6 +482,5 @@ nav>ul>li {
     font-size: 1.2rem;
 
   }
-
 
 }

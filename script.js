@@ -53,4 +53,4 @@ emailForm.addEventListener('submit', (event) => {
       emailError.textContent = 'Please enter a valid email address.';
       emailInput.classList.add("error");
     }
-  });
+});
