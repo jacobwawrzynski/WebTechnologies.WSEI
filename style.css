@@ -280,6 +280,10 @@ nav>ul>li {
   font-size: 18px;
 }
 
+#popup .content .input-box span {
+  color: var(--red-text-clr);
+}
+
 #popup .content .input-box input[type="submit"] {
   max-width: 150px;
 }
@@ -294,8 +298,8 @@ nav>ul>li {
 /* ############### About section ###############*/
 #about .title p {
   font-weight: var(--medium-text);
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 /* ############### Services section ###############*/

@@ -49,7 +49,7 @@
             <h2>Your individual health center</h2>
             <h3>Take full control over your body with <span>The Superman Cell</span> and change your life</h3>
             <a class="btn-get-started" onclick="popupVisible();">Get Started</a>
-            
+
             <!-- Popup newsletter -->
             <div id="popup">
               <div class="content">
@@ -59,14 +59,20 @@
                   to date with new improvements! <br>
                   You will get 10% off for each service!
                 </p>
+                <form id="email-newsletter">
                   <div class="input-box">
-                    <input type="email" placeholder="Your Email">
+                    <label for="email"></label>
+                    <input id="email-input" type="text" name="email" placeholder="Your Email">
                   </div>
                   <div class="input-box">
-                    <input class="btn-get-started" type="submit" value="Sign Up">
+                    <span class="error" id="email-error"></span>
                   </div>
+                  <div class="input-box">
+                    <input class="btn-get-started" type="submit" value="Subscribe!">
+                  </div>
+                </form>
               </div>
-            
+
               <!-- Close button -->
               <a class="close" onclick="popupHidden();">
                 <img src="images/close.png" height="20" width="20" alt="close">
@@ -90,17 +96,17 @@
   </svg>
 
   <main>
+    <!-- About -->
     <section id="about">
       <div class="title">
         <h4>About</h4>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione excepturi ipsam ad? Repellendus maiores
-          assumenda, impedit laudantium nam voluptatibus dicta aut molestiae eveniet qui hic velit neque veniam
-          quibusdam doloribus ratione nihil asperiores expedita sequi adipisci dolorem reprehenderit officiis alias
-          necessitatibus? Debitis maiores, blanditiis ducimus ea doloremque optio expedita cum harum sequi, deleniti
-          mollitia doloribus unde pariatur impedit, accusantium eos!</p>
+        <p>Our company specializes in cutting-edge health technology, providing a tiny chip that can control the human
+          hormone system and monitor health through a mobile app. We empower individuals to take control of their health
+          and well-being through innovative and reliable solutions.</p>
       </div>
     </section>
 
+    <!-- Services -->
     <section id="services">
       <div class="title">
         <h4>Services</h4>
