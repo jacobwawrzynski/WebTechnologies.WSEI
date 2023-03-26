@@ -8,6 +8,7 @@
     # Newsletter
     # About section
     # Services section
+    # Pricing section
     # Media queries
 */
 
@@ -77,6 +78,7 @@ header{
   align-items: center;
   color: var(--blue-text-clr);
   background-color: var(--header-bg-clr);
+  overflow: hidden;
 }
 
 svg {
@@ -189,6 +191,7 @@ nav>ul>li {
   display: inline-block;
   background: var(--header-bg-clr);
   margin-top: 30px;
+  font-size: 25px;
 }
 
 #header-section .btn-get-started:hover {
@@ -286,6 +289,17 @@ nav>ul>li {
   font-size: 18px;
 }
 
+.popupNewsletter .newsletter-button {
+  color: var(--red-text-clr);
+  border-radius: 50px;
+  border: 2px solid var(--red-text-clr);
+  transition: all ease-in-out 0.3s;
+  display: inline-block;
+  background: var(--header-bg-clr);
+  margin-top: 30px;
+  font-size: 20px !important;
+}
+
 .popupNewsletter .content .input-box span {
   color: var(--red-text-clr);
 }
@@ -369,10 +383,15 @@ nav>ul>li {
 }
 
 /* ############### Pricing cards ###############*/
+#pricing {
+  max-width: 1400px;
+  padding: 20px;
+}
+
 .pricing-cards {
-  display: flex;
-  justify-content: space-around;
-  align-items: stretch;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
   margin: 50px auto;
   max-width: 800px;
 }
@@ -384,8 +403,6 @@ nav>ul>li {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
   padding: 20px;
-  flex-basis: 30%;
-  margin: 0 10px;
 }
 
 .pricing-card h2 {
