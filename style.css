@@ -300,6 +300,13 @@ nav>ul>li {
   font-size: 20px !important;
 }
 
+.popupNewsletter .newsletter-button:hover {
+  background-color: var(--red-text-clr); 
+  color: var(--header-bg-clr);
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
 .popupNewsletter .content .input-box span {
   color: var(--red-text-clr);
 }
@@ -369,12 +376,11 @@ nav>ul>li {
 	padding: 20px;
 	border-radius: 10px;
 	box-shadow: 0px 0px 10px #888888;
-	transition: transform 0.2s ease-in-out;
 }
 
-.card:hover {
+/* .card:hover {
 	transform: scale(1.05);
-}
+} */
 
 .card img {
 	width: 100%;
@@ -384,25 +390,32 @@ nav>ul>li {
 
 /* ############### Pricing cards ###############*/
 #pricing {
-  max-width: 1400px;
   padding: 20px;
 }
 
 .pricing-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 70px;
   margin: 50px auto;
-  max-width: 800px;
+  max-width: 1200px;
+  overflow: visible;
 }
 
 .pricing-card {
-  background-color: #f5f5f5;
+  background-color: var(--header-bg-clr);
+  color: white;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 25px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
+  transition: transform 0.2s ease-in-out;
   padding: 20px;
+}
+
+.pricing-card:hover {
+	transform: scale(1.15);
+  background-color: var(--darkblue-text-clr);
 }
 
 .pricing-card h2 {

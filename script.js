@@ -24,7 +24,13 @@ function closeMenu() {
 
 // Newsletter
 function popupNewsletterVisible() {
-    popupNewsletter.classList.add("active");
+    if (newsletterSuccess.classList.contains("active")) {
+        popupSuccessHide();
+        popupNewsletter.classList.add("active");
+    } else {
+        popupNewsletter.classList.add("active");
+    }
+    
 }
 
 function popupNewsletterHidden() {
