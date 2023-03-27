@@ -440,18 +440,19 @@ nav>ul>li {
 }
 
 .pricing-card button {
-  background-color: #4caf50;
-  color: #fff;
-  border: none;
+  background-color: var(--header-bg-clr);
+  color: var(--darkred-text-clr);
+  border: 2px solid var(--darkred-text-clr); 
   border-radius: 5px;
   padding: 10px 20px;
   font-size: 18px;
   cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .pricing-card button:hover {
-  background-color: #3e8e41;
+  background-color: var(--darkred-text-clr);
+  color: var(--darkblue-text-clr);
 }
 
 /* ############### Media queries ###############*/

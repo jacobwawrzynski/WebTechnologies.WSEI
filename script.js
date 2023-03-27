@@ -60,3 +60,20 @@ emailForm.addEventListener('submit', (event) => {
       emailInput.classList.add("error");
     }
 });
+
+// Pricing plans
+// TODO
+let price = 0;
+
+function pricingPlan(plan) {
+
+    if (plan === 'basic') {
+        price = 299.99;
+    }
+    if (plan === 'advanced') {
+        price = 599.99;
+    }
+    if (plan === 'premium') {
+        price = 1499.99;
+    }
+}
