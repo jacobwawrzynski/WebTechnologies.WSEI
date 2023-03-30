@@ -22,7 +22,7 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
-// Newsletter
+// Newsletter (for demonstration purposes only)
 function popupNewsletterVisible() {
     if (newsletterSuccess.classList.contains("active")) {
         popupSuccessHide();
@@ -66,7 +66,6 @@ emailForm.addEventListener('submit', (event) => {
 let price = 0;
 
 function pricingPlan(plan) {
-
     if (plan === 'basic') {
         price = 299.99;
     }
@@ -76,4 +75,8 @@ function pricingPlan(plan) {
     if (plan === 'premium') {
         price = 1499.99;
     }
+}
+
+function getPrice() {
+    return price;
 }

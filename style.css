@@ -9,6 +9,7 @@
     # About section
     # Services section
     # Pricing section
+    # Contact form
     # Media queries
 */
 
@@ -453,6 +454,49 @@ nav>ul>li {
 .pricing-card button:hover {
   background-color: var(--darkred-text-clr);
   color: var(--darkblue-text-clr);
+}
+
+/* ############### Contact form ###############*/
+.form-content {
+  display: flex;
+  align-items: center;
+}
+
+#contact-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#contact-form button[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#contact-form button[type="submit"]:hover {
+  background-color: #3e8e41;
 }
 
 /* ############### Media queries ###############*/

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jakub Wawrzyński">
+    <meta name="description" content="The Superman Cell product official website">
+    <meta name="keywords" content="cell, superman, future, product, health, superhuman, immune system, anatomy">
+    <link rel="stylesheet" href="style.css">
+    <title>The Superman Cell</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="nav-logo">
+                <h1>The <span>Superman</span> Cell</h1>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#header-section" class="nav-link underline-animation">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link underline-animation">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link underline-animation">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#pricing" class="nav-link underline-animation">Pricing</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <section id="header-section">
+            <div class="container">
+                <div class="form-content">
+
+                    <form id="contact-form">
+                        <div class="contect-field">
+                          <label for="forename">Forename:</label>
+                          <input type="text" id="forename" name="forename" required>
+                        </div>
+                        <div class="contect-field">
+                          <label for="surname">Surname:</label>
+                          <input type="text" id="surname" name="surname" required>
+                        </div>
+                        <div class="contect-field">
+                          <label for="plan">Plan:</label>
+                          <input type="text" id="plan" name="Plan" value="" required>
+                        </div>
+                        <div class="contect-field">
+                          <label for="phone">Phone Number:</label>
+                          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+                        </div>
+                        <div class="contect-field">
+                          <label for="email">Email Address:</label>
+                          <input type="email" id="email" name="email">
+                        </div>
+                        <button type="submit">Submit</button>
+                      </form>
+
+                    <div class="mitochondrium">
+                        <img src="images/mitochondrium.png" alt="Mitochondrium">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- Waves at the bottom of header -->
+    <svg viewBox="0 0 500 100">
+        <path d="M 0 50 C 150 150 300 0 500 80 L 500 0 L 0 0" fill="#00cfcf" opacity="1"></path>
+        <path d="M 0 50 C 150 150 330 -30 500 50 L 500 0 L 0 0" fill="#0061cf" opacity="1"></path>
+        <path d="M 0 30 C 215 150 250 -50 500 60 L 500 0 L 0 0" fill="#000c2c" opacity="1"></path>
+    </svg>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
