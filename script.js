@@ -46,9 +46,7 @@ function popupSuccessHide() {
     newsletterSuccess.classList.remove("active");
 }
 
-// Newsletter validation
-emailForm.addEventListener('submit', (event) => {
-    event.preventDefault();
+function submitNewsletter() {
     const email = emailInput.value;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const isValidEmail = emailRegex.test(email);
@@ -59,7 +57,7 @@ emailForm.addEventListener('submit', (event) => {
       emailError.textContent = 'Please enter a valid email address.';
       emailInput.classList.add("error");
     }
-});
+}
 
 // Pricing plans
 let price = 0;
@@ -91,7 +89,14 @@ function saveFormData() {
 }
 
 let priceInput = document.getElementById('price');
-let planInput = document.getElementById('price');
+let planInput = document.getElementById('plan');
 
 priceInput.value = localStorage.getItem('price');
 planInput.value = localStorage.getItem('plan');
+
+
+
+// Newsletter validation
+// emailForm.addEventListener('submit', (event) => {
+    
+// });
