@@ -38,42 +38,46 @@
                 <span class="bar"></span>
             </div>
         </nav>
-        <section id="header-section">
+        <section id="contact-section">
             <div class="container">
                 <div class="form-content">
-
                     <form id="contact-form">
-                        <div class="contect-field">
-                          <label for="forename">Forename:</label>
-                          <input type="text" id="forename" name="forename" required>
+                        <div class="form-group">
+                            <div class="contact-field">
+                                <label for="forename">Forename</label>
+                                <input type="text" id="forename" name="forename" required>
+                            </div>
+                            <div class="contact-field">
+                                <label for="surname">Surname</label>
+                                <input type="text" id="surname" name="surname" required>
+                            </div>
+                            <div class="contact-field">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+                            </div>
+                            <div class="contact-field">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email">
+                            </div>
                         </div>
-                        <div class="contect-field">
-                          <label for="surname">Surname:</label>
-                          <input type="text" id="surname" name="surname" required>
+                        <div class="form-group">
+                            <div class="contact-field">
+                                <label for="plan">Price</label>
+                                <input type="text" id="price" name="Price" readonly>
+                            </div>
+                            <div class="contact-field">
+                                <label for="plan">Plan</label>
+                                <input type="text" id="plan" name="Plan" readonly>
+                            </div>
+                            <div class="contact-field">
+                                <button class="btn-get-started" type="submit">Submit</button>
+                            </div>
                         </div>
-                        <div class="contect-field">
-                          <label for="plan">Plan:</label>
-                          <input type="text" id="plan" name="Plan" value="" required>
-                        </div>
-                        <div class="contect-field">
-                          <label for="phone">Phone Number:</label>
-                          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
-                        </div>
-                        <div class="contect-field">
-                          <label for="email">Email Address:</label>
-                          <input type="email" id="email" name="email">
-                        </div>
-                        <button type="submit">Submit</button>
-                      </form>
-
-                    <div class="mitochondrium">
-                        <img src="images/mitochondrium.png" alt="Mitochondrium">
-                    </div>
+                        </form>
                 </div>
             </div>
         </section>
     </header>
-
     <!-- Waves at the bottom of header -->
     <svg viewBox="0 0 500 100">
         <path d="M 0 50 C 150 150 300 0 500 80 L 500 0 L 0 0" fill="#00cfcf" opacity="1"></path>

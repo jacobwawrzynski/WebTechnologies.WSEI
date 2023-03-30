@@ -62,21 +62,31 @@ emailForm.addEventListener('submit', (event) => {
 });
 
 // Pricing plans
-// TODO
 let price = 0;
+let planType = "";
 
 function pricingPlan(plan) {
     if (plan === 'basic') {
         price = 299.99;
+        planType = "Basic plan";
     }
     if (plan === 'advanced') {
         price = 599.99;
+        planType = "Advanced plan";
     }
     if (plan === 'premium') {
         price = 1499.99;
+        planType = "Premium plan";
     }
+
+    getPrice();
+    getPlanType();
 }
 
 function getPrice() {
-    return price;
+    document.querySelector("#price").innerHTML = price;
+}
+
+function getPlanType() {
+    document.querySelector("#price").innerHTML = plan;
 }
