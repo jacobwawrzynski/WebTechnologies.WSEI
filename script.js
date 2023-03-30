@@ -78,15 +78,20 @@ function pricingPlan(plan) {
         price = 1499.99;
         planType = "Premium plan";
     }
-
-    getPrice();
-    getPlanType();
 }
 
-function getPrice() {
-    document.querySelector("#price").innerHTML = price;
+function saveFormData() {
+    
+    // Save the input values to localStorage
+    localStorage.setItem('price', price);
+    localStorage.setItem('plan', planType);
+    
+    // Move to the next page
+    window.location.href = 'contact.html';
 }
 
-function getPlanType() {
-    document.querySelector("#price").innerHTML = plan;
-}
+let priceInput = document.getElementById('price');
+let planInput = document.getElementById('price');
+
+priceInput.value = localStorage.getItem('price');
+planInput.value = localStorage.getItem('plan');
