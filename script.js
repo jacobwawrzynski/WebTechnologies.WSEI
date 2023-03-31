@@ -93,10 +93,3 @@ let planInput = document.getElementById('plan');
 
 priceInput.value = localStorage.getItem('price');
 planInput.value = localStorage.getItem('plan');
-
-
-
-// Newsletter validation
-// emailForm.addEventListener('submit', (event) => {
-    
-// });

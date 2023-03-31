@@ -45,7 +45,6 @@
             <h2>Your individual health center</h2>
             <h3>Take full control over your body with <span>The Superman Cell</span> and change your life</h3>
             <a class="btn-get-started" onclick="popupNewsletterVisible();">Join!</a>
-
             <!-- Popup newsletter -->
             <div class="popupNewsletter">
               <div class="content">
@@ -68,14 +67,12 @@
                   </div>
                 </form>
               </div>
-
               <!-- Close button -->
               <a class="close" onclick="popupNewsletterHidden();">
                 <img src="images/close.png" height="20" width="20" alt="close">
               </a>
 
             </div>
-
             <!-- Success popup -->
             <div class="popupNewsletter" id="newsletterSuccess">
               <div class="content">
@@ -88,12 +85,10 @@
                   <input class="btn-get-started" type="button" value="Done" onclick="popupSuccessHide();">
                 </div>
               </div>
-
               <!-- Close button -->
               <a class="close" onclick="popupSuccessHide();">
                 <img src="images/close.png" height="20" width="20" alt="close">
               </a>
-
             </div>
 
           </div>
@@ -122,7 +117,6 @@
           and well-being through innovative and reliable solutions.</p>
       </div>
     </section>
-
     <!-- Services -->
     <section id="services">
       <div class="title">
@@ -149,14 +143,12 @@
             life better</p>
         </div>
     </section>
-
     <!-- Pricing -->
     <section id="pricing">
       <div class="title">
         <h4>Pricing</h4>
         <p>Check out pricing options</p>
       </div>
-      
       <div class="pricing-cards">
         <div class="pricing-card">
           <h2>Basic Plan</h2>
@@ -169,7 +161,6 @@
           </ul>
           <button id="basic-plan-btn" class="pricing-btn" onclick="pricingPlan('basic');saveFormData();">Choose Plan</button>
         </div>
-      
         <div class="pricing-card">
           <h2>Advanced Plan</h2>
           <p class="price">$599.99/month</p>
@@ -181,7 +172,6 @@
           </ul>
           <button id="advanced-plan-btn" class="pricing-btn" onclick="pricingPlan('advanced');saveFormData();">Choose Plan</button>
         </div>
-      
         <div class="pricing-card">
           <h2>Premium Plan</h2>
           <p class="price">$1499.99/month</p>
@@ -197,6 +187,12 @@
       </div>
     </section>
   </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Jakub Wawrzyński</p>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
