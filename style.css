@@ -304,6 +304,23 @@ nav>ul>li {
 .popupNewsletter .content .input-box input[type="submit"],
 .popupNewsletter .content .input-box input[type="button"] {
   max-width: 150px;
+  color: var(--red-text-clr);
+  border-radius: 50px;
+  padding: 8px 35px 10px 35px;
+  border: 2px solid var(--red-text-clr);
+  transition: all ease-in-out 0.3s;
+  display: inline-block;
+  background: var(--header-bg-clr);
+  margin-top: 30px;
+  font-size: 25px;
+}
+
+.popupNewsletter .content .input-box input[type="submit"]:hover,
+.popupNewsletter .content .input-box input[type="button"]:hover {
+  background-color: var(--red-text-clr); 
+  color: var(--header-bg-clr);
+  border: 2px solid transparent;
+  cursor: pointer;
 }
 
 .close {

@@ -102,6 +102,19 @@ let planInput = document.getElementById('plan');
 priceInput.value = localStorage.getItem('price');
 planInput.value = localStorage.getItem('plan');
 
+// Sending contact form with validation
 function sendForm() {
-    popupSuccess();
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const phoneRegex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
+    const isValidEmail = emailRegex.test(emailForm.value);
+    const isValidPhone = phoneRegex.test(phone.value);
+
+    if (isValidEmail && isValidPhone) {
+        popupSuccess();
+    } else if (!isValidEmail) {
+        alert("Input email in correct format");
+    } else if (!isValidPhone) {
+        alert("Input phone in correct format");
+    }
+
 }
