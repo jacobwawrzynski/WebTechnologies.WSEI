@@ -30,7 +30,7 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
-// Newsletter (for demonstration purposes only)
+// Newsletter
 function popupNewsletterVisible() {
     if (newsletterSuccess.classList.contains("active")) {
         popupSuccessHide();
@@ -38,7 +38,6 @@ function popupNewsletterVisible() {
     } else {
         popupNewsletter.classList.add("active");
     }
-    
 }
 
 function popupNewsletterHidden() {
@@ -54,6 +53,7 @@ function popupSuccessHide() {
     newsletterSuccess.classList.remove("active");
 }
 
+// Newsletter email validation
 function submitNewsletter() {
     const email = emailInput.value;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -86,13 +86,12 @@ function pricingPlan(plan) {
     }
 }
 
+// Saving price and plan to fill it into contact form 
+// and move to the contact page
 function saveFormData() {
-    
-    // Save the input values to localStorage
     localStorage.setItem('price', price);
     localStorage.setItem('plan', planType);
     
-    // Move to the next page
     window.location.href = 'contact.html';
 }
 
