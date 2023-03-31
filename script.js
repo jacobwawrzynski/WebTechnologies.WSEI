@@ -1,12 +1,20 @@
+// Hemburger menu consts
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const navLink = document.querySelectorAll(".nav-link");
 
+// Newsletter consts
 const popupNewsletter = document.querySelector(".popupNewsletter");
-const emailForm = document.querySelector("#email-newsletter");
 const emailInput = document.querySelector('#email-input');
 const emailError = document.querySelector('#email-error');
 const newsletterSuccess = document.querySelector("#newsletterSuccess");
+
+// Form consts
+const forename = document.querySelector("#forename");
+const emailForm = document.querySelector("#email");
+const surname = document.querySelector("#surname");
+const phone = document.querySelector("#phone");
+
 
 // Toggle between active and inactive hamburger menu
 hamburger.addEventListener("click", mobileMenu);
@@ -93,3 +101,7 @@ let planInput = document.getElementById('plan');
 
 priceInput.value = localStorage.getItem('price');
 planInput.value = localStorage.getItem('plan');
+
+function sendForm() {
+    popupSuccess();
+}

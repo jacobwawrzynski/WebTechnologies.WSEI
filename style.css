@@ -472,10 +472,6 @@ nav>ul>li {
   flex-direction: column;
 }
 
-#contact-form .contact-field {
-  margin-bottom: 20px;
-}
-
 #contact-form label {
   display: block;
   margin-bottom: 5px;
@@ -492,8 +488,8 @@ nav>ul>li {
   font-size: 16px;
 }
 
-#contact-form button[type="submit"] {
-  margin-top: 0;
+#contact-form button {
+  margin-top: 30px;
   color: var(--red-text-clr);
   border-radius: 50px;
   padding: 8px 35px 10px 35px;
@@ -504,7 +500,7 @@ nav>ul>li {
   font-size: 25px;
 }
 
-#contact-form button[type="submit"]:hover {
+#contact-form button:hover {
   background-color: var(--red-text-clr); 
   color: var(--header-bg-clr);
   border: 2px solid transparent;
